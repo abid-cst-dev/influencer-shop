@@ -16,21 +16,21 @@ body {
 
 .section-heading h1,
 .section-heading p ,
-nav h2,nav a ,main h2{
+nav h2,nav a ,main h2 {
     color: #3A3A3A;
 }
 
-button, #btn, .btn{
+button, #btn, .btn {
     font-family: inherit;
     background-color: #E02C6D;
     color: #FFFFFF;
 }
 
-nav, #banner, #logo-container, main, .card-container, .featured-banner, .footer-container{
+nav, #banner, #logo-container, main, .card-container, .featured-banner, .footer-container {
     margin: 0 auto;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -76,14 +76,14 @@ ul li a {
     min-width: 0;
 }
 
-.section-heading h1{
+.section-heading h1 {
     max-width: 36.375rem;
     font-size: 3.25rem;
     line-height: 1.28;
     margin-bottom: 1rem;
 }
 
-.section-heading p{
+.section-heading p {
     max-width: 31.5rem;
     margin-bottom: 2rem;
     font-weight: 600;
@@ -93,14 +93,14 @@ ul li a {
 .img-container {
     flex: 1;
     max-width: 29.7rem;
-    background: url(../images/Circle\ design.svg); background-size: contain; background-repeat: no-repeat;
+    background: url(../images/Circle-design.svg); background-size: contain; background-repeat: no-repeat;
 }
 
-.img-container img{
+.img-container img {
     padding: 30px 33px 31px 2px;
 }
 
-.btn{
+.btn {
     border-radius: 41px;
     padding: 10px 24px 10px;
     border: none;
@@ -108,13 +108,13 @@ ul li a {
     font-size: 1rem;
 }
 
-.btn i{
+.btn i {
     margin-left: 8px;
 }
 
 /* #LOGOS */
 
-#logo-container{
+#logo-container {
     max-width: 1110px;
     display: flex;
     justify-content: space-between;
@@ -127,11 +127,11 @@ ul li a {
 
 /* MAIN TAG */
 
-main{
+main {
     margin-bottom: 100px;
 }
 
-main h2{
+main h2 {
     text-align: center;
     padding-bottom: 30px;
     font-size: 1.75rem;
@@ -139,7 +139,7 @@ main h2{
     line-height: 70px;
 }
 
-.card-container{
+.card-container {
     max-width: 1047px;
     display: flex;
     flex-wrap: wrap;
@@ -147,14 +147,14 @@ main h2{
     margin-bottom: 100px;    
 }
 
-.card{
+.card {
     width: 329px;
     padding: 17px 15px;
     box-shadow: 5px 5px 50px #3a3a3a3a;
     border-radius: 5px;
 }
 
-.card h3{
+.card h3 {
     padding-top: 1rem;
     font-size: 1.75rem;
     font-weight: 500;
@@ -170,13 +170,13 @@ main h2{
   object-fit: cover;
 }
 
-.price{
+.price {
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.87);
     line-height: 150%;
 }
 
-.rating{
+.rating {
     display: flex;
     max-width: 105px;
     justify-content: space-between;
@@ -184,18 +184,18 @@ main h2{
     margin: 3px 0;
 }
 
-.stars{
+.stars {
     font-size: 10px;
     color: #FB8200;
 }
 
-.rating-number{
+.rating-number {
     font-size: 14px;
     font-weight: 600;
     color: #5e6366dc;
 }
 
-.shipping{
+.shipping {
     max-width: 196px;
     color: rgba(120, 120, 133, 1);
     font-size: 14px;
@@ -203,17 +203,17 @@ main h2{
     line-height: 143%;
 }
 
-.see-more{
+.see-more {
     margin-left: auto;
     padding-top: 50px;
     color: #E02C6D;
 }
 
-.see-more i{
+.see-more i {
     margin-left: 8px;
 }
 
-.featured-banner{
+.featured-banner {
     max-width: 1110px;
     display: flex;
     justify-content: space-between;
@@ -221,7 +221,7 @@ main h2{
     gap: 96px;
 }
 
-.featured-text h3{
+.featured-text h3 {
     max-width: 610px;
     font-size: 2.37rem;
     color: #0A0826;
@@ -230,45 +230,46 @@ main h2{
     margin-bottom: 1rem;
 }
 
-.featured-text p{
+.featured-text p {
     max-width: 510px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 700;
     line-height: 28px;
     margin-bottom: 1rem;
     color: #6C6C6C;
 }
 
-#btn{
+#btn {
     padding: 10px 24px;
     border: none;
 }
 
-#btn i{
+#btn i {
     margin-left: 8px;
 }
 
 /* FOOTER */
 
-footer{
+footer {
+    max-width: 1340px;
     background-color: #0A0826;
 }
 
-.footer-container{
+.footer-container {
     width: 262px;
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
 }
 
-.footer-container h4{
+.footer-container h4 {
     font-size: 1.5rem;
     color: #FFFFFF;
     font-weight: bold;
     margin-bottom: 3px;
 }
 
-.footer-container p{
+.footer-container p {
     width: 262px;
     font-size: 14px;
     line-height: 24px;
@@ -276,14 +277,68 @@ footer{
     margin-bottom: 17px;
 }
 
-.icon-container{
+.icon-container {
     display: flex;
     justify-content: center;
     filter: grayscale(100);
     gap: 16px;
 }
 
-.icon-container img{
+.icon-container img {
     width: 32px;
     height: 32px;
+}
+
+@media screen and (max-width:576px){
+    
+    nav {
+        max-width: 100%;
+        padding-top: 3rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    #banner {
+        width: 98%;
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    .img-container img {
+        width: 100%;
+    }
+
+    #logo-container {
+        padding: 10px;
+        padding-left: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #logo-container img {
+        width: 80%;
+    }   
+
+    .card {
+        width: 98%;
+        margin-inline: auto;
+    }
+
+    .see-more {
+        padding-top: 30px;
+    }
+
+    .featured-banner {
+        max-width: 98%;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .featured-banner img{
+        width: 98%;
+    }
 }
