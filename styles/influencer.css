@@ -141,10 +141,10 @@ main h2 {
 
 .card-container {
     max-width: 1047px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 100px;    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    row-gap: 25px;
 }
 
 .card {
@@ -204,9 +204,11 @@ main h2 {
 }
 
 .see-more {
-    margin-left: auto;
+    grid-column: span 3;
+    text-align: right;
     padding-top: 50px;
     color: #E02C6D;
+    margin-bottom: 100px;
 }
 
 .see-more i {
@@ -305,7 +307,7 @@ footer {
     #banner {
         width: 98%;
         flex-direction: column-reverse;
-        gap: 5rem;
+        gap: 2rem;
     }
 
     .img-container img {
@@ -317,18 +319,28 @@ footer {
         padding-left: 30px;
         flex-wrap: wrap;
         justify-content: center;
+        gap: .15rem;
     }
 
     #logo-container img {
         width: 80%;
     }   
 
+    
+    .card-container {
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
     .card {
         width: 98%;
         margin-inline: auto;
     }
 
     .see-more {
+        grid-column: span 1;
         padding-top: 30px;
     }
 
@@ -341,4 +353,61 @@ footer {
     .featured-banner img{
         width: 98%;
     }
+}
+
+@media screen and (min-width:577px) and (max-width:992px){
+    
+    nav {
+        max-width: 100%;
+        padding-top: 3rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    nav ul {
+        gap: 3rem;
+    }
+
+    #banner {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    #logo-container {
+        gap: 30px;
+    }
+
+    #logo-container img {
+        width: 100%;
+    } 
+
+    main {
+        max-width: 100%;
+    }
+
+    .card-container {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 100px;
+    }
+
+    .card {
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .see-more {
+        padding-top: 10px;
+        grid-column: span 1;
+    }
+
+    .featured-banner {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .featured-banner img {
+        width: 90%;
+    }
+
 }
